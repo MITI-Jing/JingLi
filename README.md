@@ -46,32 +46,29 @@ ChefDao uses a modular **ReAct-style multi-agent** framework:
    cd JingLi
 Create and activate a virtual environment
 
-Windows:
+---
 
-```bash
-python -m venv env
-.\env\Scripts\activate
+## 🔧 Setup Instructions
 
-macOS/Linux:
+### Create and activate a virtual environment
 
-```bash
-python3 -m venv env
-source env/bin/activate
+#### 🪟 Windows
+  ```bash
+  python -m venv env
+  .\env\Scripts\activate
 
-Install dependencies
+#### 🐧 macOS/Linux
+  ```bash
+  python3 -m venv env
+  source env/bin/activate
 
-```bash
-
-pip install -r requirements.txt
-Set up environment variables
-
+#### Set up environment variables
 Create a .env file in the root directory:
 
-ini
 GEMINI_API_KEY=your_gemini_api_key_here
 🔑 You can get a Gemini API key from Google AI Studio.
 
-## 🗂️ Project Structure
+🗂️ Project Structure
 ```bash
 JingLi/
 ├── src/
@@ -86,12 +83,14 @@ JingLi/
 ├── ARCHITECTURE.md          # System design overview
 ├── EXPLANATION.md           # Agent logic explanation
 └── DEMO.md                  # Demo script and examples
+
+
 🚀 Run the App
 ```bash
 python -m src.main
 Sample prompt:
 
-vbnet
+
 Welcome to ChefDao — Your AI Chinese Cooking Assistant!
 What would you like to cook or learn today?
 > kung pao chicken
@@ -106,7 +105,7 @@ What would you like to cook or learn today?
 
 "Nutritional info for sweet and sour pork"
 
-## 🧠 Memory System
+🧠 Memory System
 ChefDao remembers user preferences between sessions:
 
 Skill Level: Beginner | Intermediate | Advanced
@@ -119,20 +118,21 @@ Cooking History: Past dishes and interactions
 
 All stored in user_memory.json.
 
-## 🧪 Configuration Options
-## 🎯 Skill Levels
+🧪 Configuration Options
+🎯 Skill Levels
 Beginner: Simple recipes with high guidance
 
 Intermediate: Moderate complexity and cooking techniques
 
 Advanced: Authentic techniques with minimal assistance
 
-## 🌱 Dietary Customizations
+🌱 Dietary Customizations
 Vegetarian/Vegan adaptations
 
 Gluten-free or low-sodium alternatives
 
 TCM-based dietary therapy recommendations
 
-## 🙌 Acknowledgements
-Inspired by the ReAct agent framework and human-first AI interaction design. Built to make authentic Chinese cooking more accessible and delightful.
+🙌 Acknowledgements
+Inspired by the ReAct agent framework and human-first AI interaction design.
+Built to make authentic Chinese cooking more accessible and delightful.
