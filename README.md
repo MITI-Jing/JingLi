@@ -48,33 +48,31 @@ Create and activate a virtual environment
 
 Windows:
 
-bash
-Copy code
+```bash
 python -m venv env
 .\env\Scripts\activate
+
 macOS/Linux:
 
-bash
-Copy code
+```bash
 python3 -m venv env
 source env/bin/activate
+
 Install dependencies
 
-bash
-Copy code
+```bash
+
 pip install -r requirements.txt
 Set up environment variables
 
 Create a .env file in the root directory:
 
 ini
-Copy code
 GEMINI_API_KEY=your_gemini_api_key_here
 🔑 You can get a Gemini API key from Google AI Studio.
 
-🗂️ Project Structure
-bash
-Copy code
+## 🗂️ Project Structure
+```bash
 JingLi/
 ├── src/
 │   ├── main.py              # CLI entrypoint
@@ -89,13 +87,11 @@ JingLi/
 ├── EXPLANATION.md           # Agent logic explanation
 └── DEMO.md                  # Demo script and examples
 🚀 Run the App
-bash
-Copy code
+```bash
 python -m src.main
 Sample prompt:
 
 vbnet
-Copy code
 Welcome to ChefDao — Your AI Chinese Cooking Assistant!
 What would you like to cook or learn today?
 > kung pao chicken
@@ -110,7 +106,7 @@ What would you like to cook or learn today?
 
 "Nutritional info for sweet and sour pork"
 
-🧠 Memory System
+## 🧠 Memory System
 ChefDao remembers user preferences between sessions:
 
 Skill Level: Beginner | Intermediate | Advanced
@@ -123,20 +119,20 @@ Cooking History: Past dishes and interactions
 
 All stored in user_memory.json.
 
-🧪 Configuration Options
-🎯 Skill Levels
+## 🧪 Configuration Options
+## 🎯 Skill Levels
 Beginner: Simple recipes with high guidance
 
 Intermediate: Moderate complexity and cooking techniques
 
 Advanced: Authentic techniques with minimal assistance
 
-🌱 Dietary Customizations
+## 🌱 Dietary Customizations
 Vegetarian/Vegan adaptations
 
 Gluten-free or low-sodium alternatives
 
 TCM-based dietary therapy recommendations
 
-🙌 Acknowledgements
+## 🙌 Acknowledgements
 Inspired by the ReAct agent framework and human-first AI interaction design. Built to make authentic Chinese cooking more accessible and delightful.
